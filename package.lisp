@@ -108,6 +108,11 @@
 
 (apply-local-nicknames '#:advent-of-code-2019.day01)
 
+(defpackage #:advent-of-code-2019.day02
+  (:nicknames #:aoc2019.day02)
+  (:use #:cl #:util))
+
+(apply-local-nicknames '#:advent-of-code-2019.day02)
 
 ;; 2024
 

@@ -49,7 +49,8 @@
                ;; AoC 2019
                (:module "2019"
                 :components
-                ((:file "day01")))
+                ((:file "day01")
+                 (:file "day02")))
                ;; AoC 2022 recap
                (:module "2022"
                 :components
