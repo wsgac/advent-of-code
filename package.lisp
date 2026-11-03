@@ -14,6 +14,7 @@
    :array-loop
    :array-transpose
    :bron-kerbosch
+   :cartesian-product
    :char-arr->num-arr
    :choose-combinations-not-replacing
    :choose-combinations-replacing
@@ -98,6 +99,15 @@
   (:use #:cl))
 
 (apply-local-nicknames '#:advent-of-code-2024.sicp)
+
+;; 2019
+
+(defpackage #:advent-of-code-2019.day01
+  (:nicknames #:aoc2019.day01)
+  (:use #:cl #:util))
+
+(apply-local-nicknames '#:advent-of-code-2019.day01)
+
 
 ;; 2024
 

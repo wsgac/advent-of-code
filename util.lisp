@@ -182,6 +182,16 @@ chosen elements. This should produce $|set|^k$ items."
 (defun parse-symbols (string)
   (mapcar #'find-symbol (str:split-omit-nulls " " string)))
 
+(defun cartesian-product (&rest lists)
+  (if (null lists)
+      '(nil)
+      (loop
+        :with tails := (apply #'cartesian-product (rest lists))
+        :for head :in (first lists)
+        :append (loop
+                  :for tail :in tails
+                  :collect (cons head tail)))))
+
 ;;;;;;;;;;;
 ;; Logic ;;
 ;;;;;;;;;;;

@@ -1,7 +1,7 @@
-;;; advent-of-code-2024.asd
+;;; advent-of-code.asd
 
-(asdf:defsystem #:advent-of-code-2024
-  :description "Advent of Code 2024 solutions"
+(asdf:defsystem #:advent-of-code
+  :description "Advent of Code solutions and other stories"
   :author "Wojciech S. Gac <wojciech.s.gac@gmail.com>"
   :license  "Specify license here"
   :version "0.0.1"
@@ -46,6 +46,10 @@
                  (:file "soviet-programming-olympiad")
                  (:file "photo-name-normalizer")
                  (:file "monadic-parser-combinators")))
+               ;; AoC 2019
+               (:module "2019"
+                :components
+                ((:file "day01")))
                ;; AoC 2022 recap
                (:module "2022"
                 :components
